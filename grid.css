@@ -1,0 +1,53 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+.container {
+    display: grid;
+    gap: 15px;
+    margin-top: 80px;
+    justify-content: center;
+    grid-template-areas: 
+        "a a b"
+        "c d d"
+        "c e e";
+    grid-template-columns: 300px 90px 200px;
+    grid-template-rows: 210px 90px 120px;
+}
+       
+  
+.body {
+    background-color: rgb(13, 13, 32);
+   
+   
+ }
+
+.success {
+ grid-area: a;
+ background-color: orangered;
+}
+
+
+.ranger {
+    grid-area: b;
+    background-color: yellow;
+
+
+}
+
+.power {
+    grid-area: c ;
+    background-color: green;
+ }
+
+.grace {
+    grid-area: d;
+    background-color: skyblue;
+}
+
+.slem {
+    grid-area: e;
+    background-color: skyblue;
+}

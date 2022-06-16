@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Primary */
+  --Bright_orange: hsl(31, 77%, 52%);
+  --Dark_cyan: hsl(184, 100%, 22%);
+  --Very_dark_cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --Transparent_white: hsla(0, 0%, 100%, 0.75);
+  --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lexend Deca';
+  font-weight: 400;
+  display: flex;
+  place-content: center;
+  background-color: var(--Very_light_gray);
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--Very_light_gray);
+}
+
+
+p {
+  font-size: 15px;
+  margin: 25px 0 60px 0;
+  color: var(--Transparent_white);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.box-container {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.all_boxes {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px;
+  align-items: flex-start;
+}
+
+.sedan {
+  background-color: var(--Bright_orange);
+  border-radius:  10px 0 0 10px;
+}
+
+.suvs {
+  background-color: var(--Dark_cyan);
+}
+
+.luxury {
+  background-color: var(--Very_dark_cyan);
+  border-radius:  0 10px 10px 0;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 15;
+  border: solid 2px var(--Very_light_gray);
+  background: var(--Very_light_gray);
+  transition: all ease 0.3s;
+}
+
+
+
+button:hover {
+  background: transparent;
+  color: var(--Very_light_gray);
+  cursor: pointer;
+}
+
+.circle {
+  margin-bottom: 30px;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 375px) {
+  p {
+    margin-bottom: 20px;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .box-container {
+    flex-direction: column;
+    margin: 16% 0;
+    padding: 8%;
+  }
+
+  .all_boxes {
+    padding: 40px 32px;
+  }
+
+  .box1 {
+    border-radius:  10px 10px 0 0;
+  }
+  
+  .box3 {
+    border-radius:  0 0 10px 10px;
+  }
+  
+}
+
+
